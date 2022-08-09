@@ -9,10 +9,6 @@ from collections import Counter
 rand.seed(42)
 np.random.seed(42)
 
-TIME_OF_DAY_MAPPING = {
-    1: 'Late Night', 2: 'Early Morning', 3: 'Morning', 
-    4: 'Noon', 5: 'Evening', 6: 'Night'
-}
 
 class Pipeline:
 
@@ -156,6 +152,7 @@ class Pipeline:
 
             pone_num_visited_before, pone_time_before = _artworks_visited_before_first_choice(events['part_one'])
             ptwo_num_visited_before, ptwo_time_before = _artworks_visited_before_first_choice(events['part_two'])
+
 
             self.statistics[user].update({
                 'num_artworks_part_one': num_artworks_part_one,
