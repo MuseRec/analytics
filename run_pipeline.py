@@ -17,7 +17,7 @@ np.random.seed(42)
 def _get_data():
     # read in the interaction data
     interactions = pd.read_csv(
-        'data/interaction_data.csv'
+        'data/interactions.csv'
     ).sort_values(['user_id', 'timestamp']).to_dict(orient = 'records') 
 
     # read in the user data
